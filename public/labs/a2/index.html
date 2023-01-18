@@ -106,14 +106,86 @@ Loading a local image:<br/>
 <!-- 2.6 - Form Tags -->
 
 <!-- 2.6.1 - Text Fields -->
-
+<h2>Text fields</h2>
+<form id="text-fields">
+    <label for="text-fields-username">Username:</label>
+    <input id="text-fields-username" placeholder="jdoe"/><br/>
+    <label for="text-fields-password">Password:</label>
+    <input type="password" id="text-fields-password"
+           value="123@#$asd"/><br/>
+    <label for="text-fields-first-name">First name:</label>
+    <input type="text" id="text-fields-first-name"
+           title="John"/><br/>
+    <label for="text-fields-last-name">Last name:</label>
+    <input type="text" id="text-fields-last-name"
+           placeholder="Doe" value="Wonderland"/>
+    <!-- copy rest of form elements here -->
+</form>
 <!-- 2.6.2 - Date, Email, Number, and Range Fields -->
-
+<h2>Other field types</h2>
+<label for="text-fields-email">
+    Email:
+</label>
+<input type="email"
+       placeholder="jdoe@somewhere.com"
+       id="text-fields-email"/><br/>
+<label for="text-fields-salary-start">
+    Starting salary:
+</label>
+<input type="number"
+       id="text-fields-salary-start"
+       placeholder="1000"
+       value="100000"/><br/>
+<label for="text-fields-rating">
+    Rating:
+</label>
+<input type="range" id="text-fields-rating"
+       placeholder="Doe"
+       max="5"
+       value="4"/><br/>
+<label for="text-fields-dob">
+    Date of birth:
+</label>
+<input type="date"
+       id="text-fields-dob"
+       value="2000-01-21"/><br/>
 <!-- 2.6.3 - Text Boxes -->
+<h2>Text boxes</h2>
+<form id="textarea">
+    <label>Biography:</label><br/>
+    <textarea cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+</form>
 
 <!-- 2.6.4 - Buttons -->
+<h3>Buttons</h3>
+<button>Click me!</button>
 
 <!-- 2.6.5 - Dropdowns -->
+<h2>Dropdowns</h2>
+
+<h3>Select one</h3>
+<label for="select-one-genre">
+    Favorite movie genre:
+</label><br/>
+<select id="select-one-genre">
+    <option value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option selected value="SCIFI">
+        Science Fiction</option>
+    <option value="FANTASY">Fantasy</option>
+</select>
+
+<h3>Select many</h3>
+<label for="select-many-genre">
+    Favorite movie genres:
+</label><br/>
+<select id="select-many-genre" multiple>
+    <option selected value="COMEDY">Comedy</option>
+    <option value="DRAMA">Drama</option>
+    <option selected value="SCIFI">
+        Science Fiction</option>
+    <option value="FANTASY">Fantasy</option>
+</select>
 
 <!-- 2.6.6 - File Upload Button -->
 <h2>File upload</h2>
@@ -161,6 +233,79 @@ Please
 to get dummy text<br/>
 
 Checkout my <a href="other-page.html">other page</a>
+<!--WD A2 SECTION 4: CHALLENGE - I FRAMES -->
+<!-- 4.1 - IFrames-->
+<!-- 4.1.1 Embedding other websites -->
+<h2>IFrame Table of Contents</h2>
+<ul>
+    <li><a href="#embedding-website">Embedding other websites</a></li>
+    <li><a href="#embedding-youtube">Embedding YouTube videos</a></li>
+    <li><a href="#embedding-slides">Embedding Google slides</a></li>
+</ul>
+
+<a name="embedding-website"></a>
+<h2>Embedding other websites</h2>
+<a href="#top">Top</a><br/>
+<iframe width="600"
+        height="400"
+        src="https://en.wikipedia.org/wiki/SpaceX">
+</iframe>
+
+<!-- 4.1.2 Embedding YouTube -->
+<a name="embedding-youtube"></a>
+<h2>Embedding YouTube</h2>
+<a href="#top">Top</a><br/>
+<iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/7CZTLogln34"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+<!-- 4.1.3 Embedding Google Slides -->
+<a name="embedding-slides"></a>
+<h2>Embedding Google slides</h2>
+<a href="#top">Top</a><br/>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+        frameborder="0"
+        width="680"
+        height="418"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true">
+</iframe>
+<!-- 4.2 SVGs -->
+<!-- 4.2.1 Drawing Rectangle SVGs -->
+<h2>SVG Table of Contents</h2>
+<ul>
+    <li><a href="#drawing-rectangles">Drawing SVG Rectangles</a></li>
+    <li><a href="#drawing-circles">Drawing SVG Circles</a></li>
+    <li><a href="#drawing-polygons">Drawing SVG Polygons</a></li>
+</ul>
+<a name="drawing-rectangles"></a>
+<h2>Drawing rectangles</h2>
+<svg width="300" height="100">
+    <rect width="300" height="100"
+          style="fill:rgb(0,0,255); stroke-width:10;
+   stroke:rgb(0,0,0)" />
+</svg>
+<!-- 4.2.1 Drawing Circle SVGs -->
+<a name="drawing-circles"></a>
+<h2>Drawing circles</h2>
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40"
+            stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+<!-- 4.2.1 Drawing Polygon SVGs -->
+<a name="drawing-polygons"></a>
+<h2>Drawing polygons</h2>
+<svg width="300" height="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+             style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;" />
+</svg>
+
+
 
 </body>
 </html>
