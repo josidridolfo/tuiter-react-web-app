@@ -1,0 +1,41 @@
+/* index.css is a CSS for explore/index.html. */
+
+/*
+
+All classes must be prefixed with "wd-".
+All content below is offset 16px from the left border.
+The letters A, B, C, etc. are used to reference different parts of the wireframe and don't need to be implemented;
+only the content they refer to.
+
+The wireframe shows at least one example of different types of posts labeled C, D, and E.
+For this assignment, create at least 2 examples of each. Grab dummy content from https://www.lipsum.com/,
+from real posts and articles, or create your own content.
+
+ */
+
+body { /* entire page background is black */
+    background-color: black; /* bg color is black */
+    border-color: rgb(47, 51, 54); /* Borders are rgb(47, 51, 54). */
+}
+
+span { /* gearbox or spanner */
+    content: "\2699";
+}
+
+
+.border-solid {
+    color: rgb(47,51,54);
+}
+
+.wd-search {
+    background-color: darkgray;
+    text-decoration-color: white;
+    border-radius: 50px;
+
+}
+
+
+.grid-col-left-sidebar {
+    width: 20%;
+    float: left;
+}
