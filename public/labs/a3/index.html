@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
 <!-- 3.1.2 Styling with the Style tag -->
-    <style>
+    <!-- style>
         p {
             background-color: blue;
             color: white;
         }
-    </style>
+    </style -->
 <!-- 3.1.3 Styling with the Link tag -->
     <link href="index.css" rel="stylesheet"/>
     <title>Title</title>
@@ -310,9 +310,9 @@ rest of the page. Its position is
 <!-- 5.1 - Rotate a List -->
 <h3>Rotating a list</h3>
 <ul class="rotate-list">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li>This is 5.1 - Rotate a List</li>
+    <li>The list is rotated counter-clockwise</li>
+    <li>List item #3</li>
 </ul>
 
 <!-- 5.2 - Rotate a List Item -->
@@ -325,8 +325,10 @@ rest of the page. Its position is
 
 <!-- 5.3 - Rotate an Image -->
 <h3>Rotating an image</h3>
+<p>This deep-fried meme is from Wikipedia. IT's an examle of an aesthetically "dank" meme that features distortion and
+saturated colors. It's rotated, clearly.</p>
 <img class="rotate-image" width="400px"
-     src="https://s14085.pcdn.co/wp-content/uploads/2019/10/dowjones_chart_100_years_20200327.png"/>
+     src="https://upload.wikimedia.org/wikipedia/commons/1/18/Deep_fried_meme.jpg"/>
 
 <!-- 5.4 - Rotate a Table -->
 <h3>Rotating a table</h3>
@@ -370,6 +372,9 @@ rest of the page. Its position is
 <p class="animation-keyframes">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
 
 <!-- 5.7 - Flex -->
+<h3>5.7 - Flex</h3>
+Flex is a set of styles that enables a webdev to quickly layout a web page.
+Here is a simple set of block elements:
 <div class="flex-container">
     <div class="flex-box flex-box-1">Box 1</div>
     <div class="flex-box flex-box-2">
@@ -381,9 +386,85 @@ rest of the page. Its position is
 </div>
 
 <!-- 5.7.1 - Aligning Flex Elements Horizontally -->
+<h4>5.7.1 - Aligning Flex Elements Horizontally</h4>
+<p>Here, display is set to flex and justify-content is set to center:</p>
+<div class="flex-container-justify-center">
+    <div class="flex-box flex-box-1">Box 1</div>
+    <div class="flex-box flex-box-2">
+        Box 2 Box 2<br/>Box 2 Box 2
+    </div>
+    <div class="flex-box flex-box-3">
+        Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+    </div>
+</div>
 
+<p>Here, display is set to flex and justify-content is set to end:</p>
+<div class="flex-container-justify-end">
+    <div class="flex-box flex-box-1">Box 1</div>
+    <div class="flex-box flex-box-2">
+        Box 2 Box 2<br/>Box 2 Box 2
+    </div>
+    <div class="flex-box flex-box-3">
+        Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+    </div>
+</div>
 
+<p>Here, display is set to flex and justify-content is set to space-around:</p>
+<div class="flex-container-justify-space-around">
+    <div class="flex-box flex-box-1">Box 1</div>
+    <div class="flex-box flex-box-2">
+        Box 2 Box 2<br/>Box 2 Box 2
+    </div>
+    <div class="flex-box flex-box-3">
+        Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+    </div>
+</div>
 
+<p>Here, display is set to flex and justify-content is set to space-between:</p>
+<div class="flex-container-justify-space-between">
+    <div class="flex-box flex-box-1">Box 1</div>
+    <div class="flex-box flex-box-2">
+        Box 2 Box 2<br/>Box 2 Box 2
+    </div>
+    <div class="flex-box flex-box-3">
+        Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+    </div>
+</div>
+
+<h4>5.7.2 - Aligning Flex Elements Vertically</h4>
+Flex elements can be aligned vertically, too!
+<p>Here, vertical alignment is set to flex-start</p>
+<div class="flex-container-align-flex-start">
+    <div class="flex-box flex-box-1">Box 1</div>
+    <div class="flex-box flex-box-2">
+        Box 2 Box 2<br/>Box 2 Box 2
+    </div>
+    <div class="flex-box flex-box-3">
+        Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+    </div>
+</div>
+
+<p>Here, vertical alignment is set to center</p>
+<div class="flex-container-align-center">
+    <div class="flex-box flex-box-1">Box 1</div>
+    <div class="flex-box flex-box-2">
+        Box 2 Box 2<br/>Box 2 Box 2
+    </div>
+    <div class="flex-box flex-box-3">
+        Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+    </div>
+</div>
+
+<p>Here, vertical alignment and horizontal alignment are set to fill the box</p>
+<div class="flex-container">
+    <div class="flex-box flex-box-1 flex-fill">Box 1</div>
+    <div class="flex-box flex-box-2 flex-fill">
+        Box 2 Box 2<br/>Box 2 Box 2
+    </div>
+    <div class="flex-box flex-box-3 flex-fill">
+        Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3<br/>Box 3 Box 3 Box 3
+    </div>
+</div>
 
 <!-- 5.8 - Media Queries -->
 <h2>Media queries</h2>
