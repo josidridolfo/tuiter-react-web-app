@@ -465,6 +465,19 @@ and (max-width: 600px) {
         background-color: red;
         color: white;
     }
+    h1 {
+        font-family: Arial;
+        font-size: 24pt;
+    }
+    p {
+        font-family: Beirut;
+        font-size: 12pt;
+    }
+
+    div {
+        font-family: Georgia;
+        font-size: 10pt;
+    }
 }
 
 /* 600 to 1200px width*/
@@ -478,6 +491,19 @@ and (max-width: 1200px) {
         background-color: yellow;
         color: black;
     }
+    h1 {
+        font-family: "Times New Roman";
+        font-size: 24pt;
+    }
+    p {
+        font-family: Palatino;
+        font-size: 12pt;
+    }
+
+    div {
+        font-family: Arial;
+        font-size: 10pt;
+    }
 }
 
 /* 1200 to 1800px width*/
@@ -490,6 +516,19 @@ and (max-width: 1800px) {
     .media-query {
         background-color: blue;
         color: white;
+    }
+    h1 {
+        font-family: Veranda;
+        font-size: 36pt;
+    }
+    p {
+        font-family: Palatino;
+        font-size: 24pt;
+    }
+
+    div {
+        font-family: Arial;
+        font-size: 12pt;
     }
 }
 
