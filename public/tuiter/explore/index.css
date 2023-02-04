@@ -15,11 +15,16 @@ from real posts and articles, or create your own content.
 
 body { /* entire page background is black */
     background-color: black; /* bg color is black */
-    border-color: rgb(47, 51, 54); /* Borders are rgb(47, 51, 54). */
+    margin-left: 16px;
 }
 
-span { /* gearbox or spanner */
-    content: "\2699";
+input {
+    width: 90%;
+}
+
+.wd-cog { /* gearbox or spanner */
+    color: rgb(29,161,242);
+    font-size: 20px;
 }
 
 
@@ -28,14 +33,77 @@ span { /* gearbox or spanner */
 }
 
 .wd-search {
-    background-color: darkgray;
+    background-color: rgb(128,128,128);
     text-decoration-color: white;
-    border-radius: 50px;
+    border-radius: 16px;
 
 }
 
 
-.grid-col-left-sidebar {
-    width: 20%;
-    float: left;
+.wd-explore {
+    border-left-color: red;
+    border-left-width: 10px;
+
+}
+
+
+
+.wd-flex-container {
+    border-top-width: 0px;
+    border-bottom-width: 5px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.wd-flex-top-link {
+    padding: 16px;
+}
+
+.wd-flex-top-link-active > .link {
+    color: rgb(29,161,242);
+    border-bottom-color: rgb(29,161,242);
+    border-style: solid;
+    border-bottom-width: 16px;
+}
+
+.wd-flex-top-link-inactive > .link{
+    color: rgb(110, 118, 125);
+}
+
+.wd-explore-about {
+    color: rgb(110,118,125);
+    font-family: Veranda;
+}
+
+.wd-explore-content {
+
+}
+
+.wd-author {
+    color: white;
+}
+
+.wd-author-img {
+    width: 100px;
+    height: 100px;
+}
+
+.wd-explore-img {
+
+
+}
+
+
+.flex-container-justify-space-between {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
 }
