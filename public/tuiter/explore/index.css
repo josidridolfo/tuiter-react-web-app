@@ -15,38 +15,51 @@ from real posts and articles, or create your own content.
 
 body { /* entire page background is black */
     background-color: black; /* bg color is black */
-    margin-left: 16px;
 }
 
 input {
-    width: 90%;
+    width: 85%;
 }
 
-.wd-cog { /* gearbox or spanner */
+.wd-search {
+    text-decoration-color: white;
+    border-radius: 16px;
+    padding-top: 10px;
+    padding-left: 16pt;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". gearbox";
+    grid-area: searchbar;
+}
+
+.wd-searchbar {
+    background-color: darkgrey;
+    height: 14px;
+}
+
+.wd-gearbox {
+    grid-area: gearbox;
     color: rgb(29,161,242);
     font-size: 20px;
 }
 
 
-.border-solid {
-    color: rgb(47,51,54);
-}
-
-.wd-search {
-    background-color: rgb(128,128,128);
-    text-decoration-color: white;
-    border-radius: 16px;
-
-}
-
-
 .wd-explore {
-    border-left-color: red;
-    border-left-width: 10px;
-
+    max-width: 600px;
+    border: rgb(47, 51, 54) solid 1px;
 }
 
-
+.wd-content-without-image {
+    display: grid;
+    justify-content: space-between;
+    border: rgb(47, 51, 54) solid 1px;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .wd-flex-container {
     border-top-width: 0px;
@@ -65,7 +78,7 @@ input {
     padding: 16px;
 }
 
-.wd-flex-top-link-active > .link {
+.wd-flex-top-link-active a {
     color: rgb(29,161,242);
     border-bottom-color: rgb(29,161,242);
     border-style: solid;
@@ -79,31 +92,70 @@ input {
 .wd-explore-about {
     color: rgb(110,118,125);
     font-family: Veranda;
+    padding-left: 16pt;
+    font-size: 13px;
 }
 
 .wd-explore-content {
-
-}
-
-.wd-author {
     color: white;
+    font-weight: bold;
+    padding-left: 16pt;
+    font-size: 15px;
+    font-color: rgb(110, 118, 125);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    max-width: 350px;
 }
 
-.wd-author-img {
-    width: 100px;
-    height: 100px;
+
+.wd-explore-author {
+    color: white;
+    font-weight: bold;
+    padding-left: 16pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
 }
+
+
+
+.wd-content-with-image {
+    display: grid;
+    justify-content: space-between;
+    border: rgb(47, 51, 54) solid 1px;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
 .wd-explore-img {
+    grid-area: content-image;
+    height: 100px;
+    width: 100px;
+    border-radius: 25%;
+    padding-right: 16px;
+}
 
-
+.wd-searchbar {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". gearbox";
+    grid-area: wd-searchbar;
 }
 
 
-.flex-container-justify-space-between {
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
+
+a {
+    font-family: Arial;
+    font-size: 15px;
+
+}
+.wd-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    grid-area: wd-links;
 }
