@@ -104,7 +104,8 @@ input {
     font-color: rgb(110, 118, 125);
     padding-bottom: 5px;
     padding-top: 5px;
-    max-width: 350px;
+    max-width: 425px;
+    line-height: 18px;
 }
 
 
