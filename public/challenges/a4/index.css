@@ -1,0 +1,36 @@
+.img {
+    z-index: 0;
+}
+
+.image-caption {
+    color: white;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    font-size: 28px;
+    z-index: 1;
+}
+
+#bootstrap-overrides .nav-item .active {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-color: blue;
+    border-bottom-width: medium;
+    color: black;
+}
+
+#bootstrap-overrides .nav-link {
+    color: darkgrey;
+}
+
+#bootstrap-overrides .form-text {
+    background-color: lightgrey;
+    color: black;
+}
+
+#bootstrap-overrides .fa-cog {
+    color: grey;
+
+}
