@@ -11,6 +11,33 @@
     z-index: 1;
 }
 
+.img-generic-caption {
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 12px;
+    z-index: 1;
+}
+
+
+#bootstrap-overrides .nav-tabs {
+    display: flex;
+    align-content: stretch;
+    border-bottom-style: none;
+}
+
+#bootstrap-overrides .nav-item {
+    display: flex;
+    align-content: stretch;
+}
+
+#bootstrap-overrides .col-xxl-7 .list-group-item {
+    border-color: #F0F0F0;
+    border-width: thin;
+    border-top-style: none;
+}
+
 #bootstrap-overrides .nav-item .active {
     border-top-style: none;
     border-left-style: none;
@@ -23,14 +50,51 @@
 
 #bootstrap-overrides .nav-link {
     color: darkgrey;
+    font-family: serif;
 }
 
 #bootstrap-overrides .form-text {
-    background-color: lightgrey;
+    background-color: #F1F1F1;
     color: black;
 }
 
 #bootstrap-overrides .fa-cog {
-    color: grey;
+    color: #F1F1F1;
 
+}
+
+#bootstrap-overrides .fa-twitter {
+    color: blue;
+}
+
+#bootstrap-overrides .list-group-item span {
+    padding-left: 17.5px;
+
+}
+
+#bootstrap-overrides .follow {
+    background-color: #F1F1F1;
+}
+
+#bootstrap-overrides .list-group-item-action {
+    border-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    font-size: 20px;
+    color: darkgrey;
+}
+
+#bootstrap-overrides .list-group-item-action.active {
+    color: black;
+    font-weight: bolder;
+}
+
+#bootstrap-overrides .list-group-item.container-fluid.follow {
+    background-color: #F1F1F1;
+    border-style: none;
+}
+
+#bootstrap-overrides .text-tweet > span.text-secondary {
+    color: red;
 }

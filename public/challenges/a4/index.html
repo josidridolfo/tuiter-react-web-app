@@ -14,7 +14,7 @@
 <body>
 <div class="container" id="bootstrap-overrides">
     <div class="row">
-    <div class="list-group col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+    <div class="list-group col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 pt-1">
         <a href="#" class="list-group-item list-group-item-action">
             <i class="fab fa-twitter pe-2"></i>
         </a>
@@ -62,8 +62,8 @@
             <i class="fa fa-cog ps-4 pt-1 col-1 display-6"></i>
         </div>
 
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
+        <ul class="nav nav-tabs d-flex justify-content-between">
+            <li class="nav-item ps-3">
                 <a class="nav-link active" aria-current="page" href="#">For You</a>
             </li>
             <li class="nav-item">
@@ -75,13 +75,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Sports</a>
             </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item d-none d-md-block pe-3">
                 <a class="nav-link" href="#">Entertainment</a>
             </li>
         </ul>
         <div class="list-group">
             <div class="list-group-item position-relative">
                 <img src="https://techcrunch.com/wp-content/uploads/2019/09/SpaceX-Starship-Mk1-17.jpg" class="w-100">
+                <div class="img-generic-caption">Somewhere in Florida - 2021</div>
                 <div class="image-caption">
                     SpaceX's Spaceship
                 </div>
@@ -90,8 +91,8 @@
             <div class="list-group-item container-fluid">
                 <div class="row">
                     <div class="col-9 text-container">
-                        <div class="text-secondary">
-                            <span class="text-secondary">Web Development</span>
+                        <div class="text-secondary text-tweet">
+                            <span class="text-secondary">Politics Trending</span>
                         </div>
                         <div class="fw-bold text-main">ReactJS
                         <span class="text-secondary">
@@ -166,62 +167,39 @@
     </div>
 
     <div class="list-group col-xxl-3 col-xl-3 col-lg-3 d-lg-block d-none pt-1">
-        <div class="list-group-item fw-bolder">Who To Follow</div>
-        <div class="list-group-item container-fluid">
+        <div class="list-group-item fw-bolder container-fluid follow">Who To Follow</div>
+        <div class="list-group-item container-fluid follow">
             <div class="row">
             <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="img-fluid rounded-circle col-2">
             <div class="col-6 text-container">
                     <div class="fw-bold">Java</div>
                     <div class="fw-normal">@Java</div>
             </div>
-                <button class="btn btn-primary col-4 rounded-pill">Follow</button>
+                <button class="btn btn-dark col-4 rounded-pill">Follow</button>
             </div>
         </div>
 
-        <div class="list-group-item container-fluid">
+        <div class="list-group-item container-fluid follow">
             <div class="row d-flex">
                 <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy" class="img-fluid rounded-circle col-2">
                 <div class="col-6">
                     <div class="fw-bold">Relativity Space</div>
                     <div class="fw-normal">@relativityspace</div>
                 </div>
-                <button class="btn btn-primary col-4 rounded-pill">Follow</button>
+                <button class="btn btn-dark col-4 rounded-pill">Follow</button>
             </div>
         </div>
 
-        <div class="list-group-item container-fluid">
+        <div class="list-group-item container-fluid follow">
             <div class="row">
                 <img src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg" class="img-fluid rounded-circle col-2">
                 <div class="col-6 text-container">
                     <div class="fw-bold">Virgin Galactic</div>
                     <div class="fw-normal">@virgingalactic</div>
                 </div>
-                <button class="btn btn-primary col-4 rounded-pill">Follow</button>
+                <button class="btn btn-dark col-4 rounded-pill">Follow</button>
             </div>
         </div>
-
-        <div class="list-group-item container-fluid">
-            <div class="row">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" class="img-fluid rounded-circle col-2">
-                <div class="col-6 text-container">
-                    <div class="fw-bold">NASA</div>
-                    <div class="fw-normal">@NASA</div>
-                </div>
-                <button class="btn btn-primary col-4 rounded-pill">Follow</button>
-            </div>
-        </div>
-
-        <div class="list-group-item container-fluid">
-            <div class="row">
-                <img src="https://www.freepnglogos.com/uploads/tesla-logo-png-27.png" class="img-fluid rounded-circle col-2">
-                <div class="col-6 text-container">
-                    <div class="fw-bold">Tesla</div>
-                    <div class="fw-normal">@Tesla</div>
-                </div>
-                <button class="btn btn-primary col-4 rounded-pill">Follow</button>
-            </div>
-        </div>
-
     </div>
     </div>
 </div>
