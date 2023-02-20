@@ -20,13 +20,13 @@ const PostItem = (post) => {
         </div>
         <div class="container-fluid pt-2 pb-2">
         <div class="row row-flex">
-            <span class="col"><a href="#" class="text-secondary"><i
-                class="fa fa-comment wd-bookmark-interaction"></i>${post.comments}</a></span>
-            <span class="col"><a href="#" class="text-secondary"><i
-                class="fa fa-retweet"></i>${post.shares}</a></span>
-            <span class="col"><a href="#" class="text-secondary"><i
-                class="fa fa-heart"></i>${post.likes}</a></span>
-            <span class="col"><a href="#" class="text-secondary"><i
+            <span class="col"><a href="#" class="text-secondary text-decoration-none"><i
+                class="fa fa-comment wd-bookmark-interaction"></i> ${post.comments}</a></span>
+            <span class="col"><a href="#" class="text-secondary text-decoration-none"><i
+                class="fa fa-retweet"></i> ${post.shares}</a></span>
+            <span class="col"><a href="#" class="text-secondary text-decoration-none"><i
+                class="fa fa-heart"></i> ${post.likes}</a></span>
+            <span class="col"><a href="#" class="text-secondary text-decoration-none"><i
                 class="fa fa-arrow-up-from-bracket"></i>Share</a></span>
         </div>
         </div>

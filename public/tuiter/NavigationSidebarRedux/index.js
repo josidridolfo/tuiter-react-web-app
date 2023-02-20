@@ -12,20 +12,20 @@
 
 import NavigationSidebarList from "./NavigationSidebarList.js"
 
-const NavigationSidebar = (active) => {
-    return(`
-   <div class="list-group">
-     <a class="list-group-item" href="/">
-       <i class="fab fa-twitter"></i></a>
-       
-       ${NavigationSidebarList(active)}
-   
-   </div>
-   <div class="d-grid mt-2">
-     <a href="tweet.html"
-        class="btn btn-primary btn-block rounded-pill">
-        Tweet</a>
-   </div>
+function NavigationSidebar(active) {
+    const NavSidebar = () => {
+        return (`
+        <div class="list-group">
+            <a class="list-group-item" href="/">
+            <i class="fab fa-twitter"></i></a>
+            ${NavigationSidebarList(active)}
+        </div>
+        <div class="d-grid mt-2">
+            <a href="tweet.html"
+                class="btn btn-primary btn-block rounded-pill">
+            Tweet</a>
+        </div>
  `);
+    }
 }
-export default NavigationSidebar;
+export {NavigationSidebar};
