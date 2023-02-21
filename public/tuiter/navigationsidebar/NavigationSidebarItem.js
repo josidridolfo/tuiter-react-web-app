@@ -1,5 +1,5 @@
 const NavigationSidebarItem = (navigation, active) => {
-    const isActive = navigation.caption === active ? 'active' : '';
+    const isActive = navigation.caption == active ? 'active' : '';
     return (`
 <a href="${navigation.url}" class="list-group-item list-group-item-action d-flex align-items-center ${isActive}">
     <i class="fa ${navigation.faElement} pe-2"></i>

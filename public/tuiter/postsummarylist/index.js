@@ -1,4 +1,4 @@
-import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
+import PostSummaryList from "./PostSummaryList.js";
 
 const PostSummary = () => {
     return(`

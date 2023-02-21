@@ -1,13 +1,13 @@
 export default [
 
     {
-        url: '../HomeScreen/index.html',
+        url: '../homescreen/index.html',
         faElement: 'fa-home',
         caption: 'Home',
     },
 
     {
-        url: '../ExploreScreen/index.html',
+        url: '../explorescreen/index.html',
         faElement: 'fa-hashtag',
         caption: 'Explore',
     },
