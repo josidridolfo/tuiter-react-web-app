@@ -20,7 +20,6 @@ function App() {
                      element={<Tuiter/>}/>
           </Routes>
       </div>
-
    </BrowserRouter>
 
   );
