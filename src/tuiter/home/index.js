@@ -1,30 +1,24 @@
+import React from "react";
 import NavigationSidebar from "../navsidebar/index.js";
 import Post from "../postitems/index.js";
 import PostSummary from "../postsummary/index.js";
 
 
-function exploreComponent() {
-    $('#wd-explore').append(`
-    <!--    <h2>Explore</h2>  -->
-          <div class="row mt-2">
-   <div class="col-2 col-md-2 col-lg-1 col-xl-2">
-        <!-- <h3>NavigationSidebar</h3> -->
-        ${NavigationSidebar("Home")}
+const HomeComponent = () => {
+    return(
+   <>
+   <div className="row">
+       <div className="col-11 position-relative">
+           <input placeholder="Search Tuiter" className="form-control rounded-pill ps-5"/>
+           <i className="bi bi-search position-absolute wd-nudge-up"/>
+       </div>
+       <div className="col-1">
+           <i className="wd-bottom-4 text-primary float-end bi bi-gear-fill fs-2 position-relative"/>
+       </div>
    </div>
-   <div class="col-10 col-lg-7 col-xl-6">
-    <!-- <h3>ExploreComponent</h3> -->
-    <!-- SEARCH BAR AND COG - on next refactor move into separate JS function -->
-        <div class="row mb-1">
-            <input type="text" class="form-text col-10 ms-3 rounded-pill" placeholder="&#x1F50D; Search">
-            <i class="fa fa-cog text-primary ps-4 pt-1 col-1 display-6"></i>
-        </div>
-        ${Post()}
-   </div>
-   <div class="list-group col-xxl-3 col-xl-3 col-lg-3 d-lg-block d-none pt-1 follow">
-    <!-- <h3>WhoToFollowList</h3> -->
-        ${PostSummary()}
-   </div>
-    `);
-}
+        <Post/>
+   </>
+    );
+};
 
-$(exploreComponent);
+export default HomeComponent;

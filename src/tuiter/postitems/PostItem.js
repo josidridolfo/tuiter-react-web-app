@@ -25,7 +25,7 @@ const PostItem = ({
         <img src={`${post.userAvatar}`}  className="rounded-circle img-fluid"/>
     </div>
     <div className="col-11">
-        <div className="text-white fw-bold">{post.userName}
+        <div className="fw-bold">{post.userName}
             <span className="text-secondary fw-normal">@{post.userHandle}  &#183; {post.time}</span></div>
         <div className="text-white">{post.content}</div>
 

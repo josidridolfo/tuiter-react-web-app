@@ -1,59 +1,62 @@
-export default
-[
+import { faHome, faHashtag, faEnvelope, faBookmark, faFlask, faEllipsisH, faList, faUser } from "@fortawesome/free-solid-svg-icons";
+
+const navItems = [
 
     {
         id_: "123",
-        url: '../homescreen/index.html',
-        faElement: 'fa-home',
+        url: '/tuiter/home',
+        faIcon: faHome,
         caption: 'Home',
     },
 
     {
         id_: "234",
-        url: '../explorescreen/index.html',
-        faElement: 'fa-hashtag',
+        url: '/tuiter/explore',
+        faIcon: faHashtag,
         caption: 'Explore',
     },
 
     {
         id_: "345",
-        url: '#',
-        faElement: 'fa-bell',
-        caption: 'Notifications',
+        url: '/',
+        faIcon: faFlask,
+        caption: 'A6 Lab',
     },
 
     {
         id_: "456",
         url: '#',
-        faElement: 'fa-envelope',
+        faIcon: faEnvelope,
         caption: 'Messages',
     },
 
     {
         id_: "567",
         url: '#',
-        faElement: 'fa-bookmark',
+        faIcon: faBookmark,
         caption: 'Bookmarks',
     },
 
     {
         id_: "678",
         url: '#',
-        faElement: 'fa-list',
+        faIcon: faList,
         caption: 'Lists',
     },
 
     {
         id_: "789",
         url: '#',
-        faElement: 'fa-user',
+        faIcon: faUser,
         caption: 'Profile',
     },
 
     {
         id_: "890",
         url: '#',
-        faElement: 'fa-ellipsis-h',
+        faIcon: faEllipsisH,
         caption: 'More',
     },
-]
+];
+
+export default navItems;

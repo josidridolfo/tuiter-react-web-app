@@ -19,9 +19,10 @@ const PostSummaryItem = (
                         <div class="text-secondary">
                             <span class="text-secondary">{post.topic}</span>
                         </div>
-                        <div class="fw-bold text-main">{post.userName}
-                        <span class="text-secondary ps-2">{post.time}
-                        </span></div>
+                        <div>
+                            <span class="fw-bold text-main pe-1">{post.userName}</span>
+                            <span class="text-secondary">{post.time}</span>
+                        </div>
                         <div class="text-main fw-bold">{post.title}</div>
                         <div class="text-muted">{post.tweets} Tuits</div>
                     </div>
