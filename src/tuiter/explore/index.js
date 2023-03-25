@@ -1,6 +1,6 @@
 import React from "react";
-import PostSummaryList from "../postsummary";
 import "./index.css";
+import TopicSummaryList from "../topics/index";
 
 const ExploreComponent = () => {
     return(
@@ -29,7 +29,7 @@ const ExploreComponent = () => {
                 <img src="https://techcrunch.com/wp-content/uploads/2019/09/SpaceX-Starship-Mk1-17.jpg" className="w-100"/>
                 <h1 className="image-caption position-absolute">SpaceX's Spaceship</h1>
         </div>
-            <PostSummaryList/>
+            <TopicSummaryList/>
         </>
     );
 };

@@ -5,14 +5,11 @@ import {BrowserRouter, Link} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
 function App() {
-
-
-
   return (
       <BrowserRouter>
       <div className="container">
           <Routes>
-              <Route path="/"
+              <Route path="/*"
                      element={<Labs/>}/>
               <Route path="/hello"
                      element={<HelloWorld/>}/>
@@ -21,7 +18,6 @@ function App() {
           </Routes>
       </div>
    </BrowserRouter>
-
   );
-}
+};
 export default App;

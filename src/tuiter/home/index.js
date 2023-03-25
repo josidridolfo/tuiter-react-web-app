@@ -1,7 +1,6 @@
 import React from "react";
-import NavigationSidebar from "../navsidebar/index.js";
-import Post from "../postitems/index.js";
-import PostSummary from "../postsummary/index.js";
+import TuitList from "../tuits/index.js";
+import WhatsHappening from "./whatsHappening";
 
 
 const HomeComponent = () => {
@@ -16,7 +15,8 @@ const HomeComponent = () => {
            <i className="wd-bottom-4 text-primary float-end bi bi-gear-fill fs-2 position-relative"/>
        </div>
    </div>
-        <Post/>
+       <WhatsHappening/>
+       <TuitList/>
    </>
     );
 };

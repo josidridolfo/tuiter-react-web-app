@@ -1,13 +1,11 @@
-// Who To Follow List Item takes an Item who (an array with
-// the following parameters:
-// (a) avatarIcon, String that is an href to an image
-// (b) userName, String
-// (c) handle, String
-// The function iterates over the
 import React from 'react';
 
-const WhoToFollowListItem = (
-            {who = {userName: 'NASA', handle: 'NASA', avatarIcon: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg'}
+const WhoToFollowItem = (
+            {who = {
+                userName: 'NASA',
+                handle: 'NASA',
+                avatarIcon: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg'
+            }
         }
     ) => {
     return(
@@ -25,4 +23,4 @@ const WhoToFollowListItem = (
 </li>
     );
 };
-export default WhoToFollowListItem;
+export default WhoToFollowItem;
