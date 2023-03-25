@@ -3,12 +3,6 @@ import NavItem from "./NavItem";
 import {useSelector} from "react-redux";
 import { faHome, faHashtag, faEnvelope, faBookmark, faFlask, faEllipsisH, faList, faUser } from "@fortawesome/free-solid-svg-icons";
 
-//
-// import navElementsArray from "./navelements";
-// import NavSidebarItem from "./navsidebaritem";
-
-
-
 
 const NavigationSidebar = () => {
     const navArray = useSelector(state => state.nav)

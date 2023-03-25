@@ -2,56 +2,80 @@
     {
         "id_": 123,
         "url": "/tuiter/home",
-        "faIcon": "faHome",
+        "faIcon": {
+            "prefix" : "fas",
+            "iconName" : "home"
+        },
         "caption": "Home"
     },
 
     {
         "id_": "234",
         "url": "/tuiter/explore",
-        "faIcon": "faHashtag",
+        "faIcon": {
+            "prefix" : "fas",
+            "iconName" : "hashtag"
+        },
         "caption": "Explore"
     },
 
     {
         "id_": "345",
         "url": "/",
-        "faIcon": "faFlask",
+        "faIcon": {
+            "prefix" :  "fas",
+            "iconName":  "flask"
+        },
         "caption": "A6 Lab"
     },
 
     {
         "id_": "456",
         "url": "#",
-        "faIcon": "faEnvelope",
+        "faIcon": {
+            "prefix" :  "fas",
+            "iconName":  "envelope"
+        },
         "caption": "Messages"
     },
 
     {
         "id_": "567",
         "url": "#",
-        "faIcon": "faBookmark",
+        "faIcon": {
+            "prefix" :  "fas",
+            "iconName":  "bookmark"
+        },
         "caption": "Bookmarks"
     },
 
     {
         "id_": "678",
         "url": "#",
-        "faIcon": "faList",
+        "faIcon": {
+            "prefix" :  "fas",
+            "iconName":  "list"
+        },
         "caption": "Lists"
     },
 
     {
         "id_": "789",
         "url": "#",
-        "faIcon": "faUser",
+        "faIcon": {
+            "prefix" :  "fas",
+            "iconName":  "user"
+        },
         "caption": "Profile"
     },
 
     {
         "id_": "890",
         "url": "#",
-        "faIcon": "faEllipsisH",
+        "faIcon": {
+            "prefix" :  "fas",
+            "iconName":  "ellipsis"
+        },
         "caption": "More"
     }
 ]

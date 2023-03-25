@@ -55,7 +55,7 @@ const TuitItem = (
     className="fa fa-heart"/> {tuit.likes}</a></span>
             <span className="col"><a href="#" className="text-secondary text-decoration-none"><i
     className="fa fa-arrow-up-from-bracket"/>Share</a></span>
-            <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}></i>
+            <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}>Delete</i>
         </div>
         </div>
     </div>

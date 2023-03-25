@@ -4,6 +4,7 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import * as Icons from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
+import { faHome, faHashtag, faEnvelope, faBookmark, faFlask, faEllipsisH, faList, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const iconList = Object.keys(Icons)
     .filter((key) => key !== 'fas' && key !== 'prefix')

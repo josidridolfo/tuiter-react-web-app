@@ -7,10 +7,12 @@ const WhatsHappening = () => {
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
-            tuit: whatsHappening
+            content: whatsHappening
+            // console.log(whatsHappening);
         }
         dispatch(createTuit(newTuit));
     }
+
     return (<div className="row">
             <div className="col-auto">
                 <img src="/images/nasa.png" width={60}/>
