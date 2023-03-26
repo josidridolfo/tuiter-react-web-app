@@ -16,7 +16,10 @@ const NavItem = (
     {
         navItem = {
             url: "../home/index.html",
-            faIcon: "fa-home",
+            faIcon:  {
+                "prefix" : "fas",
+                "iconName" : "hashtag"
+            },
             caption: "home"
         }
     }

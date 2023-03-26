@@ -1,0 +1,18 @@
+[
+    {
+        "_id": 123,
+        "nameFirst": "Wm. Josid",
+        "nameLast": "Ridolfo",
+        "nameUser": "josidridolfo",
+        "profilePicture" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        "bannerPicture" : "",
+        "bio" : "Foreign policy wonk, philosophy MA, 8+ years working in the humanitarian and international development space, specializing in leveraging data to promote resilience and stability in vulnerable and conflict-affected contexts. CS Grad Student.",
+        "website" :  "www.google.com",
+        "location" : "Boston, MA",
+        "dateOfBirth" : "1986-02-14",
+        "dateJoined" : "01/2023",
+        "followingCount" : 340,
+        "followerCount" :  223,
+        "tweets" :  432
+    }
+]

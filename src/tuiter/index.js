@@ -4,20 +4,25 @@ import WhoToFollowList from "./whotofollow";
 import ExploreComponent from "./explore";
 import {Route, Routes} from "react-router";
 import HomeComponent from "./home";
+import ProfileComponent from "./profile";
 import Topics from "./topics/";
+import Tuit from "./tuits";
 import whoReducer from "./reducers/whoReducer.js";
 import tuitReducer from "./reducers/tuitReducer.js";
 import topicReducer from "./reducers/topicReducer.js";
 import navReducer from "./reducers/navReducer.js";
+import profileReducer from "./reducers/profileReducer.js"
 import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
+import EditProfile from "./profile/edit/EditProfile";
 const store = configureStore(
     {reducer:
         {
         nav: navReducer,
-        who: whoReducer,
-        tuit: tuitReducer,
-        topic: topicReducer}
+        profile: profileReducer,
+        tuits: tuitReducer,
+        topic: topicReducer,
+        who: whoReducer}
 });
 
 function Tuiter() {
@@ -33,12 +38,15 @@ function Tuiter() {
                     <Routes>
                         <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
+                        <Route path="profile" element={<ProfileComponent/>}/>
+                        <Route path="profile/edit" element={<EditProfile/>}/>
                     </Routes>
                 </div>
                 <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
                     <Routes>
                         <Route path="home" element={<Topics/>}/>
                         <Route path="explore" element={<WhoToFollowList/>}/>
+                        <Route path="profile" element={<WhoToFollowList/>}/>
                     </Routes>
                 </div>
                 </div>

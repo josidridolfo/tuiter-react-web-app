@@ -1,6 +1,6 @@
 [
     {
-        "id_": 123,
+        "id_": "home",
         "url": "/tuiter/home",
         "faIcon": {
             "prefix" : "fas",
@@ -10,7 +10,7 @@
     },
 
     {
-        "id_": "234",
+        "id_": "explore",
         "url": "/tuiter/explore",
         "faIcon": {
             "prefix" : "fas",
@@ -20,7 +20,7 @@
     },
 
     {
-        "id_": "345",
+        "id_": "lab",
         "url": "/",
         "faIcon": {
             "prefix" :  "fas",
@@ -30,7 +30,7 @@
     },
 
     {
-        "id_": "456",
+        "id_": "messages",
         "url": "#",
         "faIcon": {
             "prefix" :  "fas",
@@ -40,7 +40,7 @@
     },
 
     {
-        "id_": "567",
+        "id_": "bookmarks",
         "url": "#",
         "faIcon": {
             "prefix" :  "fas",
@@ -50,7 +50,7 @@
     },
 
     {
-        "id_": "678",
+        "id_": "list",
         "url": "#",
         "faIcon": {
             "prefix" :  "fas",
@@ -60,8 +60,8 @@
     },
 
     {
-        "id_": "789",
-        "url": "#",
+        "id_": "user",
+        "url": "/tuiter/profile",
         "faIcon": {
             "prefix" :  "fas",
             "iconName":  "user"
@@ -70,7 +70,7 @@
     },
 
     {
-        "id_": "890",
+        "id_": "more",
         "url": "#",
         "faIcon": {
             "prefix" :  "fas",

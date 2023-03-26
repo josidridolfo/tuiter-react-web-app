@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux"; // import useSelector
 import {addTodo, deleteTodo, todoDoneToggle} from "./todos-reducer";
+
 const Todos = () => {
     const todos = useSelector(state => state.todos);
     const [todo, setTodo] = useState({do:''}); // create local todo state variable

@@ -3,16 +3,20 @@ import tuitArray from "../data/tuits.json";
 
 const currentUser = {
     "userName": "NASA",
-    "handle": "@nasa",
-    "image": "nasa.png",
+    "userHandle": "nasa",
+    "userAvatar": "https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg",
 };
 
 const templateTuit = {
     ...currentUser,
-    "topic": "Space",
-    "time": "2h",
+    "time": "Just Now",
+    "content" : "",
+    "image": "",
+    "linkHeadline": "",
+    "linkSummary": "",
+    "linkSite": "",
     "liked": false,
-    "replies": 0,
+    "comments": 0,
     "shares": 0,
     "likes": 0,
 };
@@ -25,19 +29,37 @@ const tuitSlice = createSlice({
     reducers: {
         createTuit(state, action) {
             state.unshift({
-                ...action.payload,
-                ...currentUser,
                 _id: (new Date()).getTime(),
+                content: action.payload.content,
+                ...currentUser,
+
             })
         },
         deleteTuit(state, action) {
-           const index = this.state.findIndex(tuit =>
-               tuit._id === action.payload);
-           console.log('Deleting tuit:', action.payload, 'at index: ', index);
-           state.splice(index, 1);
+            const index = action.payload
+            state.splice(index, 1)
             },
+
+        toggleTuitLike(state, action) {
+            const tuit = state.find((tuit) =>
+                tuit._id === action.payload._id)
+            console.log(tuit._id)
+            tuit.liked = !tuit.liked // Toggle Unliked // Liked (Bool)
+            tuit.likes = Number(tuit.likes);
+            if (isNaN(tuit.likes)){
+                tuit.likes = 0;
+            }
+            if (tuit.liked) { // Iterate if tuit.liked is now true; decrement if false
+                tuit.likes += 1;
+            } else {
+                tuit.likes -= 1;
+            }
+            if (tuit.likes < 0) {
+                tuit.likes = "";
+            }
+        }
         }
 });
 
-export const {createTuit, deleteTuit} = tuitSlice.actions;
+export const {createTuit, deleteTuit, toggleTuitLike} = tuitSlice.actions;
 export default tuitSlice.reducer;
