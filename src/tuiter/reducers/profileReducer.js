@@ -7,11 +7,8 @@ const profileSlice = createSlice({
     initialState: profileArray,
     reducers: {
         editProfile(state, action) {
-            console.log(action.payload)
-            state.profile = [{...state.profile[0],
-                                ...action.payload}];
-            console.log("LINE 13")
-            console.log(state.profile[0])
+            state[0] = {...state[0],
+                                ...action.payload};
         }
     }
 }

@@ -15,6 +15,10 @@ const EditProfile = () => {
         const {value} = event.target
         setProfile({...profile,nameLast: value});
     }
+    const userNameHandler = (event) => {
+        const {value} = event.target
+        setProfile({...profile,nameUser: value});
+    }
     const bioHandler = (event) => {
         const {value} = event.target
         setProfile({...profile,bio: value});
@@ -29,19 +33,18 @@ const EditProfile = () => {
     }
     function birthdateHandler(event) {
         const {value} = event.target
-        setProfile({...profile,website: value});
+        setProfile({...profile,dateOfBirth: value});
     }
 
     const dispatch = useDispatch();
     const handleSaveProfile = () => {
-        console.log(profile)
         dispatch(editProfile(profile))
     }
 
     return (
         <>
             {profiles.map((profile, index) => (
-            <li key={profile._id}>
+            <div key={profile._id}>
             <div className="">
                 {/* X (Cancel, Return to Profile LINK) and Save Button Block */}
                 <div className="d-flex justify-content-between">
@@ -82,7 +85,7 @@ const EditProfile = () => {
                         /></div>
                     <div className="col-12 text-end">
                     </div></div>
-                {/* User Name - first and last - Block */}
+                {/* User Name - first and last, plus user handle (userName) - Block */}
             <div className="mb-3">
                 <label className="form-label" >First Name</label>
                 <input type="text"
@@ -100,6 +103,14 @@ const EditProfile = () => {
                        onChange={lastNameHandler}>
                 </input>
             </div>
+                <div className="mb-3">
+                    <label className="form-label" >User Name</label>
+                    <input type="text" className="form-control bg-transparent text-muted"
+                           id="myUserName"
+                           placeholder={profile.nameUser}
+                           onChange={userNameHandler}>
+                    </input>
+                </div>
                 {/* User Bio Block */}
             <div className="mb-3">
                 <label className="form-label" >Bio</label>
@@ -129,14 +140,12 @@ const EditProfile = () => {
                 </div>
                 {/* User Details - Date of Birth */}
                 <div className="mb-3">
-                    <label className="form-label" >Birth Date</label><br/>
+                    <label className="form-label" >Birth Date: <span className="text-muted">{profile.dateOfBirth}</span> </label><br/>
                     <input type="date"
                            id="myBirthdate" name="birthday"
-                           value={profile.dateOfBirth}
                             onChange={birthdateHandler}/>
                 </div>
-
-            </li>
+            </div>
             ))}
         </>
     );
