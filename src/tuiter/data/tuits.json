@@ -1,3 +1,5 @@
+/*
+ For A8, all this is moved to the server.
 [
     {
         "_id": 123,
@@ -48,3 +50,4 @@
         "liked": false
     }
 ]
+*/

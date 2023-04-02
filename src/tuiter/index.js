@@ -20,7 +20,7 @@ const store = configureStore(
         {
         nav: navReducer,
         profile: profileReducer,
-        tuits: tuitReducer,
+        tuitsData: tuitReducer,
         topic: topicReducer,
         who: whoReducer}
 });

@@ -1,67 +1,65 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux"; // import useSelector
-import {deleteTuit, toggleTuitLike} from "../reducers/tuitReducer";
+
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import {faHeart as faHeartSolid} from "@fortawesome/free-solid-svg-icons";
+// import {toggleTuitLike} from "../reducers/tuitReducer";
 
-const TuitsComponent = () => {
-    const tuits = useSelector(state => state.tuits);
-    const [tuit, setTuit] = useState({content:''}); // create local todo state variable
+const TuitItem = ({posts}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     const likeTuitHandler = (id) => {
-        dispatch(toggleTuitLike(id));
+        dispatch(updateTuitThunk(id))
     }
     return(
-        <div className="list-group">
-            {tuits.map((tuit, index) => (
-                <div key={tuit._id} className="container-fluid border border-light">
+                <div className="container-fluid border border-light">
                     <div className="row">
                         <div className="col">
-                            <img src={`${tuit.userAvatar}`} className="rounded-circle img-fluid" />
+                            <img src={`${posts.userAvatar}`} className="rounded-circle img-fluid" />
                         </div>
                         <div className="col-11">
                             <div className="fw-bold">
-                                {tuit.userName} &nbsp;<span className="text-secondary fw-normal">@{tuit.userHandle}</span>
-                                <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(index)}></i>
-                                &nbsp;<span className="text-secondary fw-normal">&#183;&nbsp;{tuit.time}</span>
+                                {posts.userName} &nbsp;<span className="text-secondary fw-normal">@{posts.userHandle}</span>
+                                <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(posts._id)}></i>
+                                &nbsp;<span className="text-secondary fw-normal">&#183;&nbsp;{posts.time}</span>
                             </div>
 
-                            <div className="text-dark">{tuit.content}</div>
-                            {tuit.image &&
+                            <div className="text-dark">{posts.content}</div>
+                            {posts.image &&
                             <div className="wd-post-image">
-                                <img src={`${tuit.image}`} className="img-fluid rounded-top border border-light"/>
+                                <img src={`${posts.image}`} className="img-fluid rounded-top border border-light"/>
                             </div>
                             }
-                            {tuit.linkHeadline && tuit.linkSummary && tuit.linkSite &&
+                            {posts.linkHeadline && posts.linkSummary && posts.linkSite &&
                             <div className="wd-post-link border border-light rounded-bottom p-2">
-                                <div className="text-white">{tuit.linkHeadline}</div>
-                                <div className="text-secondary">{tuit.linkSummary}</div>
-                                <div className="text-secondary">&#128279; {tuit.linkSite}</div>
+                                <div className="text-white">{posts.linkHeadline}</div>
+                                <div className="text-secondary">{posts.linkSummary}</div>
+                                <div className="text-secondary">&#128279; {posts.linkSite}</div>
                             </div>
                             }
                             <div className="container-fluid pt-2 pb-2">
                                 <div className="row row-flex">
               <span className="col">
                 <a href="#" className="text-secondary text-decoration-none">
-                  <i className="fa fa-comment wd-bookmark-interaction" /> {tuit.comments}
+                  <i className="fa fa-comment wd-bookmark-interaction" /> {posts.comments}
                 </a>
               </span>
                                     <span className="col">
                 <a href="#" className="text-secondary text-decoration-none">
-                  <i className="fa fa-retweet" /> {tuit.shares}
+                  <i className="fa fa-retweet" /> {posts.shares}
                 </a>
               </span>
                                     <span className="col">
                 <a href="#" className="text-secondary text-decoration-none">
                   <FontAwesomeIcon
-                      icon={tuit.liked ? faHeartSolid : faHeart}
-                      color={tuit.liked ? "red" : "currentColor"}
-                      onClick={() => likeTuitHandler(tuit)}
-                  /> {tuit.likes}
+                      icon={posts.liked ? faHeartSolid : faHeart}
+                      color={posts.liked ? "red" : "currentColor"}
+                      // onClick={() => likeTuitHandler(posts)}
+                  /> {posts.likes}
                 </a>
               </span>
                                     <span className="col">
@@ -74,10 +72,7 @@ const TuitsComponent = () => {
                         </div>
                     </div>
                 </div>
-            ))}
-        </div>
     );
-}
-export default TuitsComponent;
+};
 
-
+export default TuitItem;
